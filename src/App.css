@@ -1,0 +1,92 @@
+/* src/App.css */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #bb86fc; /* Light purple accent */
+}
+
+.input-section {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+}
+
+input {
+  background: #2c2c2c;
+  border: 1px solid #333;
+  color: white;
+  padding: 12px;
+  width: 60%;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #03dac6; /* Teal accent */
+  color: #000;
+  font-weight: bold;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #018786;
+}
+
+/* Grid layout for notes */
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.note {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #bb86fc;
+  text-align: left;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+}
+
+.note p {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+}
+
+.note button {
+  background: transparent;
+  color: #cf6679; /* Soft red for delete */
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.note button:hover {
+  background: rgba(207, 102, 121, 0.1);
+}
